@@ -27,23 +27,23 @@ export default async function CardDetails({data}: {data: MovieProps}) {
 					<br />
 					<br />
 					<div className="flex justify-around flex-wrap">
-						<p>
+						<p className="pr-4">
 							<span className="font-semibold text-xl">
 								Language{data.Language.includes(",") ? "s" : ""}
-								&nbsp;&nbsp;
+								&nbsp;
 							</span>
 							{data.Language}
 						</p>
-						<p>
+						<p className="pr-4">
 							<span className="font-semibold text-xl">
-								Runtime&nbsp;&nbsp;
+								Runtime&nbsp;
 							</span>
 							{data.Runtime}
 							{data.Runtime !== "N/A" && "s"}
 						</p>
-						<p>
+						<p className="pr-2">
 							<span className="font-semibold text-xl">
-								Year&nbsp;&nbsp;
+								Year&nbsp;
 							</span>
 							{data.Year}
 						</p>

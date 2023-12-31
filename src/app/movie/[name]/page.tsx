@@ -26,7 +26,7 @@ export async function generateMetadata({
 export default async function Movie({params: {name}}: Params) {
 	const data: MovieProps = await fetchData(name)
 	return (
-		<main className="flex flex-grow justify-center min-h-[80dvh]">
+		<main className="flex  justify-center my-3 min-h-[calc(80dvh-1.5rem)]">
 			<Card className="w-[90%]">
 				<CardHead />
 				{data.Response === "True" ? (

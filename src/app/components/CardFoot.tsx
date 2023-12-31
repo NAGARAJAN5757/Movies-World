@@ -25,11 +25,13 @@ export default function CardFoot({
 					)}
 				</div>
 			</div>
-			<div>
-				{MovieGenres.map((genre, index) => (
-					<GenreBadge key={index} genre={genre} />
-				))}
-			</div>
+			{MovieGenres[0] !== "N/A" && (
+				<div>
+					{MovieGenres.map((genre, index) => (
+						<GenreBadge key={index} genre={genre} />
+					))}
+				</div>
+			)}
 		</CardFooter>
 	)
 }
